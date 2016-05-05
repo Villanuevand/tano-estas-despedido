@@ -1,2 +1,2 @@
-# tano-estas-despedido
+# ¡Tano estás despedido!
 Una pequeña extensión de Chrome que recuerda al Jefe despedir al Tano...
