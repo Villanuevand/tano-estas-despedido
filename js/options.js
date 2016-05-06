@@ -1,14 +1,14 @@
 /**
- * @name hidden
+ * @name ghost
  * @description Change Notification color and frequency
  * @param isDeactivated
  */
-function hidden(isDeactivated) {
+function ghost(isDeactivated) {
     options.style.color = isDeactivated ? 'graytext' : 'black';
 
     options.frequency.disabled = isDeactivated;
 }
-// Listener
+
 window.addEventListener('load', function() {
 
     options.isActivated.checked = JSON.parse(localStorage.isActivated);
@@ -16,11 +16,12 @@ window.addEventListener('load', function() {
     options.frequency.value = localStorage.frequency;
 
 
-    if (!options.isActivated.checked) { hidden(true); }
+    if (!options.isActivated.checked) { ghost(true); }
+
 
     options.isActivated.onchange = function() {
         localStorage.isActivated = options.isActivated.checked;
-        hidden(!options.isActivated.checked);
+        ghost(!options.isActivated.checked);
     };
 
     options.frequency.onchange = function() {
