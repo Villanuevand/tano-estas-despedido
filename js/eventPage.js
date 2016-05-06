@@ -14,9 +14,9 @@ if (!localStorage.isInitialized) {
     localStorage.isInitialized = true;
 }
 
-
+// If  window.Notification exists...
 if (window.Notification) {
-    
+
     if (JSON.parse(localStorage.isActivated)) { show(); }
 
     var interval = 0;
