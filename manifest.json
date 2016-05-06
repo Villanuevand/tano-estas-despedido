@@ -5,6 +5,11 @@
   "version_name": "1.0",
   "description": "Una pequeña extensión de Chrome que recuerda al Jefe despedir al Tano...",
   "author": "Andrés Villanueva",
+  "icons":{
+    "16": "images/icon_16.png",
+    "48": "images/icon_48.png",
+    "128": "images/icon_128.png"
+  },
   "browser_action": {
     "default_locale": "es",
     "default_icon": {
