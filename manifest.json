@@ -31,6 +31,9 @@
     "storage",
     "alarms",
     "notifications"
+  ],
+  "web_accessible_resources": [
+    "images/icon_48.png"
   ]
 
 }
